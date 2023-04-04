@@ -1,0 +1,267 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;   
+    position: absolute;
+    overflow-x: hidden;
+}
+
+/*NAVIGATION PANEL*/
+nav {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+nav > a img {
+    width: 28%;
+}
+/*.navbar button[class=navbar-toggler] {
+    
+}*/
+.navbar .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    padding: 0px;
+}
+.navbar-nav {
+    /*border: 1px solid black;*/
+    position: absolute;
+    left: 100px;
+}
+.navbar-nav li a {
+    text-decoration: none;
+    color: hsl(240, 93%, 11%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    word-spacing: normal;
+}
+.navbar-nav li a:hover {
+    color: rgb(202, 19, 19);
+}
+.navbar-nav li a:after {
+    content: "";
+    display: block;
+    margin: left;
+    background-color: rgb(202, 19, 19);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.navbar-nav li a:hover:after {
+    width: 70%;
+}
+.form-inline {
+    color: #555;
+    display: flex;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.form-inline input {
+    border: none;
+    background: transparent;
+    margin-right: 0px;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid rgb(235, 225, 225);
+    border-radius: inherit;
+    width: 275px;
+}
+.form-inline input::placeholder {
+    color: hsl(0, 3%, 66%);
+}
+.form-inline input:focus::placeholder {
+    color: rgb(161, 154, 154);
+}
+/*.nav-search button {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 45px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.nav-search button:hover {
+    opacity: 1;
+}*/
+.form-inline input:focus {
+    box-shadow: 0 0 5px  0 rgb(196, 189, 189);
+    border-color: rgb(236, 227, 227);
+    outline: none;
+}
+.form-inline button {
+    background: white;
+    border: 1px solid white;
+}
+.form-inline button:hover {
+    background: rgb(255, 255, 255);
+    border: 1px solid white;
+}
+/*.form-inline button:visited {
+    border-color: none;
+}*/
+
+/*HERO-SLIDER SECTION*/
+.hero-container {
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+}
+.hero-container p {
+    position: absolute;
+    top: 40%;
+    z-index: 1; 
+    color: white;
+    font-family: Fira sans;
+    font-size: 60px;
+    /*border: 1px solid white;*/
+    width: 100%;
+    font-weight: 650;
+    text-align: center;
+    /*text-decoration-color: rgb(202, 19, 19);
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 6.5px;*/
+}
+.hero-container img {
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+/*MAIN BODY SECTION*/
+.about {
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    /*border: 1px solid black;*/
+    position: relative;
+}
+.ded-com-rep .ic {
+    color: rgb(88, 88, 92); 
+    width: 2%;
+}
+.brochure-download button {
+    padding: 12px;
+    color: white;
+    background-color: rgb(202, 19, 19);
+    border: 1px solid rgb(202, 19, 19);
+    border-radius: 7px;
+    text-align: center;
+}
+.brochure-download button:hover {
+    background-color: rgb(170, 11, 11);
+    border: 1px solid rgb(170, 11, 11);
+}
+.brochure-download i {
+    padding: 7px;
+}
+
+/*FOOTER SECTION*/
+footer {
+    background: hsl(240, 86%, 19%);
+    position: relative;
+    width: 100%;
+    color: rgb(223, 210, 210);
+    padding: 40px 40px 2px 40px;
+    display: block;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(223, 210, 210);
+}
+footer a:hover {
+    color: rgb(74, 158, 228);
+    text-decoration: underline;
+}
+.upper-footer {
+    display: flex;
+}
+.upper-footer .left {
+    width: 50%;
+    display: flex;
+}
+.upper-footer .left p {
+    padding-right: 37px;
+}
+.upper-footer .left .dot {
+    font-size: 19px;
+}
+.upper-footer .right-social-media {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    float: right;
+}
+.upper-footer .right-social-media a {
+    padding-left: 11px;
+}
+/*.upper-footer .right a:hover {
+    color: ;
+}*/
+.upper-footer p {
+    font-weight: 600;
+    word-spacing: 10px;
+}
+.lower-footer p {
+    /*border: 1px solid black;*/
+    text-align: center;
+    font-size: small;
+    font-weight: 100;
+}
+.lower-footer p .o-1 {
+    font-weight: 600;
+    word-spacing: 10px;
+}
+.lower-footer p .o-2 {
+    word-spacing: normal;
+}
+.lower-footer .o-3 {
+    word-spacing: normal;
+}
+
+/*RESPONSIVE DESIGN*/
+/*Navigation Bar*/
+@media screen and (max-width: 570px) {
+    .form-inline input {
+        width: 200px;
+    }
+}
+/*Main Body Section*/
+@media screen and (max-width: 1075px) {
+    .ded-com-rep .ic {
+        padding-right: 25px;
+    }
+}
+ /*Footer Section*/
+@media screen and (max-width: 513px) {
+    .upper-footer .left {
+        display: block;
+        line-height: 0.7em;
+    }
+}
+@media screen and (max-width: 343px) {
+    .upper-footer .right-social-media {
+        display: block;
+    }
+}
