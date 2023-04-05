@@ -29,6 +29,7 @@ nav {
     padding-left: 25px;
     padding-right: 25px;
     height: 60px;
+    z-index: 10;
 }
 nav > a img {
     width: 28%;
@@ -40,7 +41,6 @@ nav > a img {
     border: none !important;
     outline: none !important;
     padding: 0px;
-    z-index: 10;
 }
 .navbar-nav {
     /*border: 1px solid black;*/
