@@ -38,9 +38,9 @@ nav > a img {
     
 }*/
 .navbar .navbar-toggler {
-    border: none !important;
-    outline: none !important;
-    padding: 0px;
+    border: none;
+    outline: none;
+    padding: 3px;
 }
 .navbar-nav {
     /*border: 1px solid black;*/
@@ -694,13 +694,13 @@ footer a:hover {
         padding-top: 70px;
     }
     .about-text-div {
-        padding: 0px 65px 65px 65px;
+        padding: 0px 35px 35px 35px;
         width: 100%;
     }
     .about-image-div {
         text-align: justify;
         margin-bottom: 50px;
-        margin-left: 65px;
+        margin-left: 35px;
         /*border: 1px solid black;*/
         width: 83%;
     }
@@ -733,7 +733,52 @@ footer a:hover {
     }
     #image-and-text-3-quote .quote-right {
         width: 100%;
-        text-align: center;
+        text-align: center; 
+    }
+}
+@media screen and (max-width: 481px) {
+    .help-center {
+        transition: transform;
+        transform: scale(0.98);
+    }
+    .image-and-text-4-help-center {
+        padding: 50px 90px 90px 90px;
+    }
+}
+@media screen and (max-width: 459px) {
+    .help-center {
+        transition: transform;
+        transform: scale(0.9);
+    }
+    .image-and-text-4-help-center {
+        padding: 40px 90px 80px 90px;
+    }
+}
+@media screen and (max-width: 427px) {
+    .help-center {
+        transition: transform;
+        transform: scale(0.82);
+    }
+    .image-and-text-4-help-center {
+        padding: 20px 90px 55px 90px;
+    }
+}
+@media screen and (max-width: 387px) {
+    .help-center {
+        transition: transform;
+        transform: scale(0.76);
+    }
+    .image-and-text-4-help-center {
+        padding: 10px 90px 45px 90px;
+    }
+}
+@media screen and (max-width: 357px) {
+    .help-center {
+        transition: transform;
+        transform: scale(0.0.68);
+    }
+    .image-and-text-4-help-center {
+        padding: 0px 90px 35px 90px;
     }
 }
 /*Footer Section*/
