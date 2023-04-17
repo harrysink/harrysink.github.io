@@ -19,6 +19,8 @@ body {
 nav {
     padding-left: 25px;
     padding-right: 25px;
+    height: 60px;
+    z-index: 10;
 }
 nav > a img {
     width: 28%;
@@ -26,15 +28,18 @@ nav > a img {
 /*.navbar button[class=navbar-toggler] {
     
 }*/
-.navbar .navbar-toggler {
-    border: none !important;
-    outline: none !important;
-    padding: 0px;
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 3px;
 }
 .navbar-nav {
     /*border: 1px solid black;*/
     position: absolute;
-    left: 100px;
+    left: 300px;
+}
+.navbar-nav li {
+    padding-right: 15px;
 }
 .navbar-nav li a {
     text-decoration: none;
@@ -108,6 +113,11 @@ nav > a img {
     background: white;
     border: 1px solid white;
 }
+.form-inline button:active {
+    color: none;
+    border: 1px solid white;
+    box-shadow: none;
+}
 .form-inline button:hover {
     background: rgb(255, 255, 255);
     border: 1px solid white;
@@ -122,6 +132,9 @@ nav > a img {
     display: block;
     max-width: 100%;
     position: relative;
+}
+.p-parent {
+    margin: 0 auto;
 }
 .hero-container p {
     position: absolute;
@@ -148,8 +161,10 @@ nav > a img {
 /*MAIN BODY SECTION*/
 .content-box {
     display: flex;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
     /*border: 2px solid black;*/
 }
 .contact-div {
@@ -207,6 +222,7 @@ nav > a img {
 }
 .rfq-div p {
     margin-bottom: 5px;
+    text-align: center;
 }
 .rfq-div input[type=file] {
     width: 300px;
@@ -257,6 +273,7 @@ nav > a img {
 .info-note {
     max-width: 100%;
     position: relative;
+    padding-left: 28px;
     /*border: 1px solid black;*/
 }
 
@@ -330,6 +347,20 @@ footer a:hover {
         width: 200px;
     }
 }
+
+/*Hero Section*/
+@media screen and (max-width: 749px) {
+    .hero-container p {
+        transition: transform .3s;
+        transform: scale(0.85);
+    }
+}
+@media screen and (max-width: 597px) {
+    .hero-container img {
+        width: 597px;
+    }
+}
+
 /*Main Body Section*/
 @media screen and (max-width: 822px) {
     .rfq-div {
@@ -339,18 +370,20 @@ footer a:hover {
 @media screen and (max-width: 798px) {
     .content-box {
         display: block;
+        padding: 0px 33px 0px 33px;
     }
     .contact-div, .rfq-div {
         width: 100%;
-        padding-top: 0px;
-    }
-    .content-box {
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-top: 28px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .info-note {
         text-align: center;
-        padding-left: 10px;
+        padding-left: 10px; 
+    }
+    .drop-container {
+        width: 100%;
     }
 }
 @media screen and (max-width: 1075px) {

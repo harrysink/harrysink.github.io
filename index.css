@@ -37,7 +37,7 @@ nav > a img {
 /*.navbar button[class=navbar-toggler] {
     
 }*/
-.navbar .navbar-toggler {
+.navbar-toggler {
     border: none;
     outline: none;
     padding: 3px;
@@ -45,7 +45,10 @@ nav > a img {
 .navbar-nav {
     /*border: 1px solid black;*/
     position: absolute;
-    left: 100px;
+    left: 300px;
+}
+.navbar-nav li {
+    padding-right: 15px;
 }
 .navbar-nav li a {
     text-decoration: none;
@@ -140,31 +143,32 @@ nav > a img {
 .navigation-buttons .previous {
     position: absolute;
     z-index: 10;
-    font-size: 25px;
-    top: 298px;
-    left: 10px;
+    top: 40%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navigation-buttons .next {
     position: absolute;
     z-index: 10;
-    font-size: 25px;
-    top: 298px;
-    right: 10px;
+    top: 40%;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navigation-buttons .nav-btn {
     /*background: #ffffff66;*/
     margin: 0;
     cursor: pointer;
     border-radius: 50%;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 65px;
     color: rgb(168, 162, 162);
     width: 150px;
     height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .3sease-in-out;
+    transition: all .3s ease-in-out;
     /*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);*/
 }
 .navigation-buttons .nav-btn:hover {
@@ -217,19 +221,16 @@ nav > a img {
 }
 .image-text {
     position: absolute;
-    top: 240px;
-    left: 170px;
+    left: 150px;
+    top: 29%;
     width: 90%;
-    display: inline-block;
-    font-size: 20px;
-    justify-content: left;
-    align-items: center;
-    z-index: 1;
+    margin: 0 auto;
+    z-index: 10;
     /*border: 2px solid white;*/
 }
 .image-text h1 {
     color: white;
-    font-size: 75px;
+    font-size: 55px;
     font-family: Century Gothic light;
     font-weight: 20px;
     line-height: 1.2em;
@@ -268,13 +269,14 @@ nav > a img {
 
 /*MAIN BODY SECTION*/
 #image-and-text-1 {
-    /*border: 1px solid black;*/
+    /*border: 5px solid black;*/
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     left: 0;
     padding-top: 100px;
+    padding-bottom: 20px;
     background-color: white;
 }
 .about-image-div {
@@ -392,7 +394,7 @@ nav > a img {
     display: flex;
 }
 .h2-div {
-    width: 40%;
+    width: 100%;
     padding-bottom: 7px;
     padding-left: 22px;
 }
@@ -444,6 +446,11 @@ nav > a img {
 }
 #image-and-text-3-quote .quote-left {
     width: 35%;
+    /*border: 1px solid black;*/
+}
+.img-responsive {
+    width: 100%;
+    height: 100%;
 }
 #image-and-text-3-quote .quote-right {
     width: 65%;
@@ -610,99 +617,94 @@ footer a:hover {
     }
  }
 /*Hero Section*/
-@media screen and (max-width: 1127px) {
+@media screen and (max-width: 900px) {
     .image-text {
-        transition: transform .3s;
-        transform: scale(0.85);
-        top: 170px;
+        top: 35%;
+        /*border: 2px solid white;*/
+    }
+    .image-text p {
+        display: none;
     }
 }
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 809px) {
     .image-text {
-        top: 150px;
+        top: 35%;
+        width: 60%;
+    }
+    .image-text h1 {
+        font-size: 45px
+    }
+    .navigation-buttons .previous {
+        top: 35%;
+        font-size: 50px;
+    }
+    .navigation-buttons .next {
+        top: 35%;
+        font-size: 50px;
     }
 }
-@media screen and (max-width: 1026px) {
-    .image-text {
-        transition: transform .3s;
-        transform: scale(0.75);
-        top: 135px;
-        left: 110px;
+@media screen and (max-width: 682px) {
+    .image-text h1 {
+        font-size: 40px;
     }
 }
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 661px) {
+    .slider-crossfade img {
+        width: 661px;
+    }
     .image-text {
-        transition: transform .3s;
-        transform: scale(0.65);
-        top: 105px;
-        left: 85px;
+        position: absolute;
+        left: 45px;
+        width: 87%;
+        /*border: 2px solid white;*/
+    }
+    .navigation-buttons .previous {
+        justify-content: left;
+        align-items: center;
+        left: 15px
+    }
+    .navigation-buttons .next {
+        justify-content: right;
+        align-items: center;
+        right: 15px;
     }
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 463px) {
     .image-text {
-        transition: transform .3s;
-        transform: scale(0.55);
-        top: 85px;
-        left: 60px;
+        top: 29%;
+        width: 80%;
+    }
+    .image-text h1 {
+        font-size: 38px;
     }
 }
-@media screen and (max-width: 808px) {
+@media screen and (max-width: 395px) {
     .image-text {
-        transition: transform .3s;
-        transform: scale(0.45);
-        top: 60px;
-        left: 35px;
+        width: 73%;
+    }
+    .images .main h1:after {
+        content: "";
     }
 }
-@media screen and (max-width: 757px) {
-    .image-text {
-        transition: transform .3s;
-        transform: scale(0.40);
-    }
-}
-@media screen and (max-width: 714px) {
-    .image-text {
-        top: 35px;
-        left: 20px;
-    }
-}
-@media screen and (max-width: 660px) {
-    .image-text {
-        top: 15px;
-        left: 5px;
-    }
-}
-@media screen and (max-width: 608px) {
-    .image-text {
-        transition: transform .3s;
-        transform: scale(0.35);
-        top: 5px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .image-text {
-        transition: transform .3s;
-        transform: scale(0.30);
-        top: 0px;
-        left: 0px
-    }
-}
+
 /*Main Body Section*/
 @media screen and (max-width: 800px) {
     #image-and-text-1 {
         display: block;
-        padding-top: 70px;
+        padding-top: 35px;
+        /*border: 5px solid black;*/
+        padding: 33px 33px 0px 33px;
     }
     .about-text-div {
-        padding: 0px 35px 35px 35px;
         width: 100%;
+        padding-right: 0px;
+        /*border: 1px solid black;*/
     }
     .about-image-div {
         text-align: justify;
-        margin-bottom: 50px;
-        margin-left: 35px;
+        margin-bottom: 35px;
         /*border: 1px solid black;*/
-        width: 83%;
+        width: 100%;
     }
     .about-image-div ul {
         display: flex;
@@ -725,17 +727,26 @@ footer a:hover {
         justify-content: end;
         float: right
     }
+    #image-and-text-2-services {
+        padding: 0px 14px 14px 14px;
+    }
     #image-and-text-3-quote {
         display: block;
     }
     #image-and-text-3-quote .quote-left {
         width: 100%;
+        /*border: 1px solid black;*/
     }
     #image-and-text-3-quote .quote-right {
         width: 100%;
         text-align: center; 
     }
 }
+/*@media screen and (max-width: 540px) {
+    .quote-right .text {
+        font-size: 30px;
+    }
+}*/
 @media screen and (max-width: 481px) {
     .help-center {
         transition: transform;

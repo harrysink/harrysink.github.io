@@ -20,7 +20,9 @@ body {
 nav {
     padding-left: 25px;
     padding-right: 25px;
-    box-shadow: 10px 0px 8px 1px gray;
+    height: 60px;
+    z-index: 10;
+    box-shadow: 8px 0px 15px 0px grey;
 }
 nav > a img {
     width: 28%;
@@ -28,15 +30,18 @@ nav > a img {
 /*.navbar button[class=navbar-toggler] {
     
 }*/
-.navbar .navbar-toggler {
-    border: none !important;
-    outline: none !important;
-    padding: 0px;
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 3px;
 }
 .navbar-nav {
     /*border: 1px solid black;*/
     position: absolute;
-    left: 100px;
+    left: 300px;
+}
+.navbar-nav li {
+    padding-right: 15px;
 }
 .navbar-nav li a {
     text-decoration: none;
@@ -110,6 +115,11 @@ nav > a img {
     background: white;
     border: 1px solid white;
 }
+.form-inline button:active {
+    color: none;
+    border: 1px solid white;
+    box-shadow: none;
+}
 .form-inline button:hover {
     background: rgb(255, 255, 255);
     border: 1px solid white;
@@ -123,6 +133,7 @@ nav > a img {
     width: 100%;
     position: relative;
     text-align: center;
+    padding-top: 110px;
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 70px;
@@ -203,6 +214,14 @@ footer a:hover {
         width: 200px;
     }
  }
+
+/*Main Body Section*/
+@media screen and (max-width: 800px) {
+    .header {
+        padding: 110px 33px 33px 33px;;
+    }
+}
+
  /*Footer Section*/
 @media screen and (max-width: 513px) {
     .upper-footer .left {

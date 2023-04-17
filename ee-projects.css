@@ -24,6 +24,8 @@ body {
 nav {
     padding-left: 25px;
     padding-right: 25px;
+    height: 60px;
+    z-index: 10;
 }
 nav > a img {
     width: 28%;
@@ -31,15 +33,18 @@ nav > a img {
 /*.navbar button[class=navbar-toggler] {
     
 }*/
-.navbar .navbar-toggler {
-    border: none !important;
-    outline: none !important;
-    padding: 0px;
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 3px;
 }
 .navbar-nav {
     /*border: 1px solid black;*/
     position: absolute;
-    left: 100px;
+    left: 300px;
+}
+.navbar-nav li {
+    padding-right: 15px;
 }
 .navbar-nav li a {
     text-decoration: none;
@@ -112,6 +117,11 @@ nav > a img {
 .form-inline button {
     background: white;
     border: 1px solid white;
+}
+.form-inline button:active {
+    color: none;
+    border: 1px solid white;
+    box-shadow: none;
 }
 .form-inline button:hover {
     background: rgb(255, 255, 255);

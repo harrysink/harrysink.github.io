@@ -13,33 +13,31 @@
     </head>
     <body>
         <script src="./assets/jquery-3.6.3.min.js"></script>
-        <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-
+        <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
         <!--NAVIGATION PANEL-->
-        <nav class="navbar navbar-expand-sm bg-white navbar-white">
+        <nav class="navbar fixed-top navbar-expand-sm bg-white navbar-white">
             <a class="navbar-brand" href="index.html"><img src="ee-logo.jpg" alt="ee logo"></a>
-            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler"><i class="fas fa-bars"></i></span>
+            </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="ee-about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="ee-services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="ee-projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="ee-contact_us.html">Contact Us</a></li>
                 </ul>
             </div>
-            <form class="form-inline" action="" method="post";>
-                <input class="form-control mr-sm-2" type="text" placeholder="what can we help you find?">
-                <button class="btn btn-success" type="submit"><i class="fas fa-search" style="color: rgb(202, 19, 19);"></i></button>
-            </form>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler"><i class="fas fa-bars"></i></span>
-            </button>
+            <!--<form class="form-inline" role="search" method="post">
+                <input id="search1" class="form-control mr-sm-2" type="search" placeholder="what can we help you find?">
+                <button id="search2" class="btn btn-success" type="submit"><i class="fas fa-search" style="color: rgb(202, 19, 19);"></i></button>
+            </form>-->
         </nav>
 
         <!--HERO-SLIDER SECTION-->
         <div class="hero-container">
-            <div>
+            <div class="p-parent">
                 <p class="hero-text">Contact us</p>
                 <img src="./img/IMG_5433.JPG" alt="">
             </div>
@@ -48,7 +46,7 @@
         <!--MAIN BODY SECTION-->
         <div class="content-box">
             <div class="contact-div">
-                <h2 class="display-4 text-left mt-5 mb-3" style="font-family: Fira Sans; font-weight: 350; 
+                <h2 class="display-4 text-left mb-3" style="font-family: Fira Sans; font-weight: 350; 
                 font-size: 31px; font-style: normal; color: hsl(240, 79%, 28%);">Contact us</h2>
                 <p>
                     <span class="lead-text" style="font-weight: bold;">Get in touch, request for quote, make inquiry:</span><br>
@@ -75,7 +73,7 @@
                 </p>
             </div>
             <div class="rfq-div">
-                <h2 class="display-4 text-left mt-5 mb-3" style="font-family: Fira Sans; font-weight: 350; 
+                <h2 class="display-4 text-left mb-3" style="font-family: Fira Sans; font-weight: 350; 
                 font-size: 31px; font-style: normal; color: hsl(240, 79%, 28%);">Request for Quote (RFQ)</h2>
                 <label for="files" class="drop-container">
                     <i class="fa-solid fa-upload" style="color: hsl(240, 93%, 11%);"></i>
@@ -85,7 +83,7 @@
                 </label>                
             </div>
         </div>
-        <p class="info-note" style="margin: 95px; font-size: small; color: grey;"><span style="color: rgb(202, 19, 19);">* </span>We are available Mon-Fri: 8.00am-5.00pm and Sat: 9.00am-4.00pm<span style="color: rgb(202, 19, 19);"> *</span></p>
+        <p class="info-note" style="margin: 50px; font-size: small; color: grey;"><span style="color: rgb(202, 19, 19);">* </span>We are available Mon-Fri: 8.00am-5.00pm and Sat: 9.00am-4.00pm<span style="color: rgb(202, 19, 19);"> *</span></p>
 
         <!--FOOTER SECTION-->
         <footer>
