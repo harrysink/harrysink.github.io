@@ -18,8 +18,8 @@ body {
 
 /*NAVIGATION PANEL*/
 nav {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 103px;
+    padding-right: 75px;
     height: 60px;
     z-index: 10;
     box-shadow: 8px 0px 15px 0px grey;
@@ -35,10 +35,16 @@ nav > a img {
     outline: none;
     padding: 3px;
 }
+.collapse {
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: end;
+    background: white;
+}
 .navbar-nav {
     /*border: 1px solid black;*/
-    position: absolute;
-    left: 300px;
+    display: flex;
+    justify-content: end;
 }
 .navbar-nav li {
     padding-right: 15px;
@@ -144,7 +150,7 @@ nav > a img {
 
 /*FOOTER SECTION*/
 footer {
-    background: hsl(240, 86%, 19%);
+    background: rgb(32, 32, 32);
     position: relative;
     width: 100%;
     color: rgb(223, 210, 210);
@@ -164,7 +170,7 @@ footer a:hover {
 }
 .upper-footer .left {
     width: 50%;
-    display: flex;
+    display: black;
 }
 .upper-footer .left p {
     padding-right: 37px;
@@ -207,6 +213,19 @@ footer a:hover {
 
 /*RESPONSIVE DESIGN*/
 /*Navigation Bar*/
+@media screen and (max-width: 840px) {
+    .navbar-nav {
+        width: 200px !important;
+        padding: 15px 30px 20px 30px !important;
+        background-color: white;
+        border-radius: 0px 0px 1px 1px;
+        margin-top: 12px;
+        box-shadow: 0 0 0 10000px rgba(0, 0, 0, .50);
+    }
+    .collapse {
+        background-color: transparent;
+    }
+}
 @media screen and (max-width: 570px) {
     .form-inline input {
         width: 200px;
@@ -217,6 +236,24 @@ footer a:hover {
 @media screen and (max-width: 800px) {
     .header {
         padding: 110px 33px 33px 33px;;
+    }
+    .navbar-toggler {
+        margin-right: 0px;
+    }
+    .navbar {
+        padding-left: 38px;
+        padding-right: 33px;
+    }
+}
+@media screen and (max-width: 577px) {
+    h2 {
+        font-size: 31px !important;
+    }
+    h3 {
+        font-size: 18px !important;
+    }
+    p {
+        font-size: 14.5px;
     }
 }
 

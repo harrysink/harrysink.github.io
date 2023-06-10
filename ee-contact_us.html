@@ -21,12 +21,12 @@
                 <span class="navbar-toggler"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav mb-auto">
                     <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="ee-about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="ee-services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="ee-projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ee-contact_us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ee-contact_us.html">Contact Us</a></li>
                 </ul>
             </div>
             <!--<form class="form-inline" role="search" method="post">
@@ -44,52 +44,59 @@
         </div>
 
         <!--MAIN BODY SECTION-->
+        <h2 class="display-4 text-left mb-3" style="font-family: Fira Sans; font-weight: bold; 
+                font-size: 41px; font-style: normal; color: black;">Contact us
+        </h2>
         <div class="content-box">
             <div class="contact-div">
-                <h2 class="display-4 text-left mb-3" style="font-family: Fira Sans; font-weight: 350; 
-                font-size: 31px; font-style: normal; color: hsl(240, 79%, 28%);">Contact us</h2>
                 <p>
-                    <span class="lead-text" style="font-weight: bold;">Get in touch, request for quote, make inquiry:</span><br>
+                    <span class="lead-text" style="font-weight: bold; color: #727070;">Get in touch, request for quote, make inquiry:</span><br>
                     <div class="sub-contact">
-                        <div style="display: flex;">
+                        <div class="line" style="display: flex;">
                             <div class="ic"><i class="fa-solid fa-phone"></i></div>
-                            <div><span class="mobile-num"><a href="">+234-8066671047</a>,<a href="">+234-07034403923</a></span></div>
+                            <div><span class="mobile-num"><a href="">+234-8066671047</a>, <a href="">+234-07034403923</a></span></div>
                         </div>
-                        <div style="display: flex;">
+                        <div class="line" style="display: flex;">
                             <div class="ic"><i class="fa-solid fa-envelope"></i></div>
                             <div><span>eagleendeavour@yahoo.com</span></div>
                         </div>
-                        <div style="display: flex;">
+                        <div class="line" style="display: flex;">
                             <div class="ic"><i class="fa-solid fa-location-dot"></i></div>
                             <div><span>Eagle Endeavour Limited, PAI Yard-MJD Area, 
                             Km 17<br>Port Harcourt-Aba Expressway, near INTELS Yard,<br>
                             Port Harcourt,Rivers State.</div>
                         </div>
-                        <div style="display: flex;">
+                        <div class="line" style="display: flex;">
                             <div class="ic"><i class="fa-solid fa-globe"></i></div>
                             <div><span>ee.com.ng</span><br></div>
                         </div>   
                     </div>
+                    <p class="info-note" style="margin-left: 26px; margin-top: 10px; font-size: small; color: grey;"><span style="color: rgb(202, 19, 19);">* </span>We are available Mon-Fri: 8.00am-5.00pm and Sat: 9.00am-4.00pm<span style="color: rgb(202, 19, 19);"> *</span></p>
                 </p>
             </div>
             <div class="rfq-div">
-                <h2 class="display-4 text-left mb-3" style="font-family: Fira Sans; font-weight: 350; 
-                font-size: 31px; font-style: normal; color: hsl(240, 79%, 28%);">Request for Quote (RFQ)</h2>
-                <label for="files" class="drop-container">
+                <h6  style="font-family: Fira Sans; font-weight: bold; font-size: 21px; font-style: normal; color: black;">Request for a Quote (RFQ) 
+                     <i class="fa-solid fa-upload" style="color: rgb(199, 17, 17); font-size: 16.5px;"></i>
+                </h6>
+                <input type="text" placeholder="Name" id="name" required>             
+                <input type="email" placeholder="Email" id="email" required>        
+                <input type="text" placeholder="Message" id="message" required>
+                <input type="file" id="file" accept="file/docx, file/pdf" required>
+                <a href="mailto: eagleendeavour@yahoo.com"><button type="submit">SEND</button></a>
+                <!--<label for="files" class="drop-container">
                     <i class="fa-solid fa-upload" style="color: hsl(240, 93%, 11%);"></i>
                     <p>Upload file in .docx or .pdf format below or drag document here</p>
                     <input id="files" type="file" accept="file/docx, file/pdf" required>
                     <a href=""><button style="display: block;">submit</button></a>
-                </label>                
+                </label>-->              
             </div>
         </div>
-        <p class="info-note" style="margin: 50px; font-size: small; color: grey;"><span style="color: rgb(202, 19, 19);">* </span>We are available Mon-Fri: 8.00am-5.00pm and Sat: 9.00am-4.00pm<span style="color: rgb(202, 19, 19);"> *</span></p>
 
         <!--FOOTER SECTION-->
         <footer>
             <div class="upper-footer">
                 <div class="left">
-                    <p><a href="ee-about.html">About</a></p> <p><a href="">Clients</a></p> <p><a href="ee-contact_us.html">Contact</a></p>
+                    <p><a href="ee-about.html">About</a></p> <!--<p><a href="">Clients</a></p>--> <p><a href="ee-contact_us.html">Contact</a></p>
                 </div>
                 <div class="right-social-media">
                     <a href=""><i class="fa-brands fa-facebook"></i></a>

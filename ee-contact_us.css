@@ -17,8 +17,8 @@ body {
 
 /*NAVIGATION PANEL*/
 nav {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 103px;
+    padding-right: 69px;
     height: 60px;
     z-index: 10;
 }
@@ -33,13 +33,20 @@ nav > a img {
     outline: none;
     padding: 3px;
 }
+.collapse {
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: end;
+    background: white;
+}
 .navbar-nav {
     /*border: 1px solid black;*/
-    position: absolute;
-    left: 300px;
+    display: flex;
+    justify-content: end;
 }
 .navbar-nav li {
     padding-right: 15px;
+    margin-right: 0px;
 }
 .navbar-nav li a {
     text-decoration: none;
@@ -65,7 +72,10 @@ nav > a img {
 .navbar-nav li a:hover:after {
     width: 70%;
 }
-.form-inline {
+.navbar-nav a.active {
+    color: rgb(202, 19, 19);
+}
+/*.form-inline {
     color: #555;
     display: flex;
     padding: 2px 2px 2px 2px;
@@ -89,7 +99,7 @@ nav > a img {
 .form-inline input:focus::placeholder {
     color: rgb(161, 154, 154);
 }
-/*.nav-search button {
+.nav-search button {
     text-indent: -999px;
     overflow: hidden;
     width: 45px;
@@ -103,7 +113,7 @@ nav > a img {
 }
 .nav-search button:hover {
     opacity: 1;
-}*/
+}
 .form-inline input:focus {
     box-shadow: 0 0 5px  0 rgb(196, 189, 189);
     border-color: rgb(236, 227, 227);
@@ -122,7 +132,7 @@ nav > a img {
     background: rgb(255, 255, 255);
     border: 1px solid white;
 }
-/*.form-inline button:visited {
+.form-inline button:visited {
     border-color: none;
 }*/
 
@@ -145,7 +155,7 @@ nav > a img {
     font-size: 60px;
     /*border: 1px solid white;*/
     width: 100%;
-    font-weight: 650;
+    font-weight: 500;
     text-align: center;
     /*text-decoration-color: rgb(202, 19, 19);
     text-decoration-line: underline;
@@ -159,16 +169,21 @@ nav > a img {
 }
 
 /*MAIN BODY SECTION*/
+h2 {
+    padding-left: 100px;
+    padding-top: 80px;
+}
 .content-box {
     display: flex;
-    padding-top: 35px;
+    padding-top: 7px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 0px;
+    margin-bottom: 70px;
     /*border: 2px solid black;*/
 }
 .contact-div {
     width: 50%;
+    margin-left: 25px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 30px;
@@ -183,9 +198,18 @@ nav > a img {
 .mobile-num a {
     text-decoration: none;
 }
+.sub-contact .line {
+    padding-bottom: 9px;
+}
 .sub-contact .ic {
-    color: rgb(88, 88, 92);
+    color: rgb(199, 17, 17);
     width: 4.5%;
+}
+.info-note {
+    max-width: 100%;
+    position: relative;
+    padding-left: 0px;
+    /*border: 1px solid black;*/
 }
 .rfq-div {
     width: 50%;
@@ -193,37 +217,72 @@ nav > a img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    margin-right: 45px;
+    padding-top: 31px;
     padding-left: 25px;
     padding-right: 25px;
     /*border: 2px solid black;*/
 }
-.rfq-div h2 {
+.rfq-div h6 {
     text-align: center;
-    padding-bottom: 8px;
+    padding-bottom: 13px;
 }
-.drop-container {
-    position: relative;
-    display: flex;
-    gap: 3px;
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    padding: 20px;
-    border: 2px dashed hsl(240, 93%, 11%);
-    border-radius: 10px;
+.rfq-div input {
+    min-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(201, 189, 189);
+    border-radius: 5px;
+}
+.rfq-div input[type=file] {
+    background: white;
     cursor: pointer;
-    /*transition: background .2s ease-in-out, border .2 ease-in-out;*/
 }
-.rfq-div .fa-solid {
-    padding-bottom: 4px;
+.rfq-div input[type=file]::file-selector-button {
+    border: 1px solid rgb(199, 17, 17);
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    transition: transform .6s;
 }
-.rfq-div p {
-    margin-bottom: 5px;
-    text-align: center;
+.rfq-div input[type=file]::file-selector-button:hover {
+    border: 2px solid rgb(199, 17, 17);
 }
+.rfq-div input[type=file]::file-selector-button:active {
+    transform: scale(0.9);
+}
+.rfq-div input:focus {
+    outline: none;
+    border: 3px solid grey;
+}
+.rfq-div button {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(199, 17, 17);
+    border: 1px solid rgb(199, 17, 17);
+    border-radius: 5px;
+    color: white;
+    transition: all 0.2s ease-in-out !important;
+    transition: transform .6s;
+}
+.rfq-div button:hover {
+    background-color: rgb(170, 11, 11);
+    border-color: rgb(170, 11, 11);
+    transition: all 0.2s ease-in-out !important;
+}
+.rfq-div button:active {
+    background-color: rgb(170, 11, 11);
+    border-color: rgb(170, 11, 11);
+    transform: scale(0.9);
+}
+/*
 .rfq-div input[type=file] {
     width: 300px;
     max-width: 100%;
@@ -235,51 +294,10 @@ nav > a img {
     border-radius: 6px;
     cursor: pointer;
 }
-.rfq-div input[type=file]::file-selector-button {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-right: 20px;
-    padding: 4px  9px 4px 9px;
-    /*background: ;
-    color: ;*/
-    transition: all .2s ease-in-out;
-}
-.rfq-div input[type=file]::file-selector-button:hover {
-    cursor: pointer;
-    border: 2px solid black;
-}
-.rfq-div a {
-    text-decoration: none;
-}
-.rfq-div button {
-    margin-top: 11px;
-    padding: 4px 10px 5px 10px;
-    color: white;
-    background-color: rgb(202, 19, 19);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15.5px;
-    font-weight: 600;
-    border: 2px solid rgb(202, 19, 19);
-    border-radius: 6px;
-    transition: all 0.3s ease-in-out;
-}
-.rfq-div button:hover {
-    /*position: relative;*/
-    /*box-shadow: 2px 2px 8px 1px grey;*/
-    cursor: pointer;
-    background-color: rgb(170, 11, 11);
-    border-color: rgb(170, 11, 11);
-}
-.info-note {
-    max-width: 100%;
-    position: relative;
-    padding-left: 28px;
-    /*border: 1px solid black;*/
-}
 
 /*FOOTER SECTION*/
 footer {
-    background: hsl(240, 86%, 19%);
+    background: rgb(32, 32, 32);
     position: relative;
     width: 100%;
     color: rgb(223, 210, 210);
@@ -299,7 +317,7 @@ footer a:hover {
 }
 .upper-footer .left {
     width: 50%;
-    display: flex;
+    display: block;
 }
 .upper-footer .left p {
     padding-right: 37px;
@@ -342,6 +360,19 @@ footer a:hover {
 
 /*RESPONSIVE DESIGN*/
 /*Navigation Bar*/
+@media screen and (max-width: 840px) {
+    .navbar-nav {
+        width: 200px !important;
+        padding: 15px 30px 20px 30px !important;
+        background-color: white;
+        border-radius: 0px 0px 1px 1px;
+        margin-top: 12px;
+        box-shadow: 0 0 0 10000px rgba(0, 0, 0, .50);
+    }
+    .collapse {
+        background-color: transparent;
+    }
+}
 @media screen and (max-width: 570px) {
     .form-inline input {
         width: 200px;
@@ -362,7 +393,20 @@ footer a:hover {
 }
 
 /*Main Body Section*/
-@media screen and (max-width: 822px) {
+@media screen and (max-width: 1075px) {
+    .content-box {
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+    h2 {
+        padding-left: 73px;
+        padding-right: 73px;
+    }
+    .navbar {
+        padding-left: 73px;
+    }
+}
+@media screen and (max-width: 959px) {
     .rfq-div {
         padding-top: 5px;
     }
@@ -370,21 +414,48 @@ footer a:hover {
 @media screen and (max-width: 798px) {
     .content-box {
         display: block;
-        padding: 0px 33px 0px 33px;
+        padding: 0px 53px 0px 33px;
+    }
+    h2 {
+        padding-left: 45px;
+        padding-top: 40px;
+        font-size: 31px !important;
     }
     .contact-div, .rfq-div {
         width: 100%;
-        padding-top: 28px;
         padding-left: 0px;
         padding-right: 0px;
+        margin-left: 10px;
+    }
+    .contact-div {
+        padding-top: 10px;
+    }
+    .contact-div p {
+        font-size: 15px;
+    }
+    .rfq-div {
+        padding-top: 28px;
     }
     .info-note {
-        text-align: center;
-        padding-left: 10px; 
+        text-align: left;
+        padding-left: 5px;
     }
-    .drop-container {
+    .rfq-div input {
+        min-width: 60%;
+    }
+    .rfq-div input[type="file"] {
+        max-width: 60%;
+    }
+    .rfq-div button {
+        font-size: 14px;
+    }
+    .navbar {
+        padding-left: 45px;
+        padding-right: 43px;
+    }
+    /*.drop-container {
         width: 100%;
-    }
+    }*/
 }
 @media screen and (max-width: 1075px) {
     .sub-contact .ic {
