@@ -186,11 +186,11 @@ h2 {
 .service-div {
     display: flex;
     flex-wrap: nowrap;
-    border: 1px solid rgb(229, 233, 205);
-    border-radius: 7px;
+    border: 1px solid white;
+    border-radius: 0px;
     margin-bottom: 70px;
     padding: 15px;
-    background-color: rgb(229, 233, 205);
+    background-color: white;
 }
 .service-div .img-div {
     width: 35% !important;
@@ -199,7 +199,7 @@ h2 {
 }
 .img-div img {
     width: 100%;
-    border-radius: 7px;
+    border-radius: 0px;
     margin-bottom: 0px;
     /*border: 1px solid black;*/
 }

@@ -232,7 +232,7 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid rgb(201, 189, 189);
-    border-radius: 5px;
+    border-radius: 0px;
 }
 .rfq-div input[type=file] {
     background: white;

@@ -152,6 +152,7 @@ nav > a img {
 }
 .carousel-caption h1 {
     font-weight: 450;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .carousel-caption p {
     font-weight: normal !important;
@@ -209,7 +210,7 @@ nav > a img {
     width: 360px;
     text-decoration: none;
     max-width: 100%;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 0px 0px 0px 0px;
 }
 .img-1 {
     margin-top: 9px;
@@ -223,7 +224,7 @@ nav > a img {
     font-weight: bold;
     font-size: 41px;
     font-style: normal;
-    font-family: Fira sans;
+    font-family: Fira Sans;
     padding-bottom: 2px;
 }
 .hidden-atd .hr-div-1 { /*UI redesign change, remove selector to revert*/
@@ -246,8 +247,8 @@ nav > a img {
     line-height: 1.2em;
     font-style: normal;
     font-size: 30px;
-    font-weight: 300;
-    font-family: Fira sans, Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: 450;
+    font-family: Fira Sans;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 15px;
@@ -265,7 +266,7 @@ nav > a img {
     font-weight: bold;
     font-size: 41px;
     font-style: normal;
-    font-family: Fira sans;
+    font-family: Fira Sans;
     padding-bottom: 2px;
 }
 .hr-div-1 {
@@ -288,9 +289,9 @@ nav > a img {
     color: black;
     line-height: 1.2em;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 450;
     font-size: 30px;
-    font-family: fira sans, Tahoma, Geneva, Verdana, sans-serif;;
+    font-family: Fira Sans;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 15px;
@@ -381,10 +382,10 @@ nav > a img {
 }
 #image-and-text-2-services .card {
     transition: .4s;
-    border-radius: 2px;
+    border-radius: 0px;
 }
 #image-and-text-2-services .card img {
-    border-radius: 2px 2px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 #image-and-text-2-services .card h4 {
     color: black;
@@ -549,7 +550,7 @@ nav > a img {
     width: 80% !important;
     margin: 20px;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: rgb(255, 255, 255);
     font-family: calibri, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: 3px 3px 13px 1px grey;
@@ -668,7 +669,7 @@ nav > a img {
 }
 .rfq-image-div img {
     margin-bottom: 25px;
-    border-radius: 3px;
+    border-radius: 0px;
     max-width: 100%;
 }
 .sub-rfq .rfq-form-div {
@@ -676,7 +677,7 @@ nav > a img {
     width: 50%;
 }
 .rfq-form-div textarea {
-    border-radius: 3px;
+    border-radius: 0px;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
@@ -695,7 +696,7 @@ nav > a img {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid white;
-    border-radius: 2px;
+    border-radius: 0px;
 }
 .rfq-form-div input:focus{
     outline: none;
@@ -765,7 +766,7 @@ nav > a img {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid rgb(201, 189, 189);
-    border-radius: 3px;
+    border-radius: 0px;
     width: 47%;
 }
 .hc-form-div input:nth-child(1) {
@@ -784,7 +785,7 @@ nav > a img {
     margin-bottom: 15px;
     margin-right: 56px;
     border: 1px solid rgb(201, 189, 189);
-    border-radius: 3px;
+    border-radius: 0px;
     width: 47%;
 }
 .hc-form-div textarea::placeholder {
