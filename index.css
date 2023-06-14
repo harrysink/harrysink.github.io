@@ -533,9 +533,11 @@ nav > a img {
     margin: 40px;
     /*background-color: pink;*/
 }
-.splide__slide.is-active {
+.splide__slide.is-active .card{
     transform: scale(1.09);
     transition: all 0.4s ease-in-out;
+    border: 1px solid rgb(121, 113, 113);
+    box-shadow: 3px 3px 13px 1px grey;
 }
 .what-clients-say .col-sm-4 {
     display: flex;
@@ -549,11 +551,11 @@ nav > a img {
 .what-clients-say .card {
     width: 80% !important;
     margin: 20px;
-    border: 1px solid white;
+    border: 1px solid rgb(190, 181, 181);
     border-radius: 0px;
     background-color: rgb(255, 255, 255);
     font-family: calibri, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 3px 3px 13px 1px grey;
+    /*box-shadow: 3px 3px 13px 1px grey;*/
     transition: all 0.4s ease-out;
 }
 .what-clients-say .text-content {
