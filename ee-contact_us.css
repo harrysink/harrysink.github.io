@@ -21,6 +21,7 @@ nav {
     padding-right: 69px;
     height: 60px;
     z-index: 10;
+    box-shadow: 2px 0px 10px 1px grey;
 }
 nav > a img {
     width: 28%;
@@ -151,7 +152,7 @@ nav > a img {
     top: 40%;
     z-index: 1; 
     color: white;
-    font-family: Fira Sans;
+    font-family: Fira sans;
     font-size: 60px;
     /*border: 1px solid white;*/
     width: 100%;
@@ -223,6 +224,7 @@ h2 {
     padding-right: 25px;
     /*border: 2px solid black;*/
 }
+
 .rfq-div h6 {
     text-align: center;
     padding-bottom: 13px;
@@ -237,6 +239,8 @@ h2 {
 .rfq-div input[type=file] {
     background: white;
     cursor: pointer;
+    display: block;
+    text-align: center;
 }
 .rfq-div input[type=file]::file-selector-button {
     border: 1px solid rgb(199, 17, 17);
@@ -300,17 +304,18 @@ footer {
     background: rgb(32, 32, 32);
     position: relative;
     width: 100%;
-    color: rgb(223, 210, 210);
+    color: white;
     padding: 40px 40px 2px 40px;
     display: block;
 }
 footer a {
     text-decoration: none;
-    color: rgb(223, 210, 210);
+    color: white;
 }
 footer a:hover {
-    color: rgb(74, 158, 228);
+    color: rgb(145, 140, 140)/*rgb(74, 158, 228)*/;
     text-decoration: underline;
+    transition: 0.2s all ease-in-out;
 }
 .upper-footer {
     display: flex;
@@ -318,6 +323,15 @@ footer a:hover {
 .upper-footer .left {
     width: 50%;
     display: block;
+}
+.upper-footer .left-hidden {
+    display: none;
+    width: 50%;
+    display: block;
+}
+.upper-footer .left-hidden p {
+    word-spacing: normal;
+    display: none;
 }
 .upper-footer .left p {
     padding-right: 37px;
@@ -360,9 +374,9 @@ footer a:hover {
 
 /*RESPONSIVE DESIGN*/
 /*Navigation Bar*/
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 800px) {
     .navbar-nav {
-        width: 200px !important;
+        width: 100% !important;
         padding: 15px 30px 20px 30px !important;
         background-color: white;
         border-radius: 0px 0px 1px 1px;
@@ -411,7 +425,7 @@ footer a:hover {
         padding-top: 5px;
     }
 }
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 800px) {
     .content-box {
         display: block;
         padding: 0px 53px 0px 33px;
@@ -436,6 +450,10 @@ footer a:hover {
     .rfq-div {
         padding-top: 28px;
     }
+    .rfq-div form {
+        display: block;
+        text-align: center;
+    }
     .info-note {
         text-align: left;
         padding-left: 5px;
@@ -445,6 +463,7 @@ footer a:hover {
     }
     .rfq-div input[type="file"] {
         max-width: 60%;
+        margin: 2px auto;
     }
     .rfq-div button {
         font-size: 14px;
@@ -456,6 +475,26 @@ footer a:hover {
     /*.drop-container {
         width: 100%;
     }*/
+    .upper-footer .left {
+        display: none;
+    }
+    .lower-footer .o-1 {
+        display: none;
+    }
+    .upper-footer .left-hidden {
+        display: unset;
+    }
+    .upper-footer .left-hidden p {
+        display: block;
+    }
+    .lower-footer p br {
+        display: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .rfq-div input[type="file"] {
+        min-width: 60%;
+    }
 }
 @media screen and (max-width: 1075px) {
     .sub-contact .ic {
@@ -463,12 +502,12 @@ footer a:hover {
     }
 }
 /*Footer Section*/
-@media screen and (max-width: 513px) {
+/*@media screen and (max-width: 513px) {
     .upper-footer .left {
         display: block;
         line-height: 0.7em;
     }
-}
+}*/
 @media screen and (max-width: 343px) {
     .upper-footer .right-social-media {
         display: block;

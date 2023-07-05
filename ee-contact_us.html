@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/all.min.css">
         <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/brands.min.css">
         <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/webfonts/fa-brands-400.ttf">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans"/>
         <link rel="icon" type="image/jpg" href="ee-logo.jpg">
     </head>
     <body>
@@ -79,11 +78,13 @@
                 <h6  style="font-family: Fira Sans; font-weight: bold; font-size: 21px; font-style: normal; color: black;">Request for a Quote (RFQ) 
                      <i class="fa-solid fa-upload" style="color: rgb(199, 17, 17); font-size: 16.5px;"></i>
                 </h6>
-                <input type="text" placeholder="Name" id="name" required>             
-                <input type="email" placeholder="Email" id="email" required>        
-                <input type="text" placeholder="Message" id="message" required>
-                <input type="file" id="file" accept="file/docx, file/pdf" required>
-                <a href="mailto: eagleendeavour@yahoo.com"><button type="submit">SEND</button></a>
+                <form action="mailto:eagleendeavour@yahoo.com" method="post">
+                    <input type="text" placeholder="Name" id="name" required>             
+                    <input type="email" placeholder="Email" id="email" required>        
+                    <input type="text" placeholder="Message" id="message" required>
+                    <input type="file" id="file" accept="file/docx, file/pdf" required>
+                    <button type="submit">SEND</button>
+                </form>
                 <!--<label for="files" class="drop-container">
                     <i class="fa-solid fa-upload" style="color: hsl(240, 93%, 11%);"></i>
                     <p>Upload file in .docx or .pdf format below or drag document here</p>
@@ -94,10 +95,20 @@
         </div>
 
         <!--FOOTER SECTION-->
-        <footer>
+        <footer class="footer">
             <div class="upper-footer">
                 <div class="left">
-                    <p><a href="ee-about.html">About</a></p> <!--<p><a href="">Clients</a></p>--> <p><a href="ee-contact_us.html">Contact</a></p>
+                    <p><a href="ee-about.html">About</a></p> 
+                    <!--<p><a href="">Clients</a></p>--> 
+                    <p><a href="ee-contact_us.html">Contact</a></p>
+                </div>
+                <div class="left-hidden">
+                    <p><a href="ee-about.html">About</a></p> 
+                    <!--<p><a href="">Clients</a></p>--> 
+                    <p><a href="ee-contact_us.html">Contact</a></p>
+                    <p><a href="terms-of -use.html">Terms of use</a></p> 
+                    <p><a href="privacy.html">Privacy</a></p> 
+                    <p><a href="index.html#help-center">Help center</a></p> 
                 </div>
                 <div class="right-social-media">
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -110,7 +121,11 @@
             </div>
             <hr>
             <div class="lower-footer">
-                <p><span class="o-1"><span class="o-2"><a href="terms-of -use.html">Terms of use</a></span> · <a href="privacy.html">Privacy</a> · <span class="o-3"><a href="index.html#help-center">Help centre</a></span></span> <br>© Copyright 2009 - 2023 Eagle Endeavour Ltd. All rights reserved</p>
+                <p>
+                    <span class="o-1">
+                        <span class="o-2"><a href="terms-of -use.html">Terms of use</a></span> · <a href="privacy.html">Privacy</a> · <span class="o-3"><a href="index.html#help-center">Help centre</a></span>
+                    </span> <br>© Copyright 2009 - 2023 Eagle Endeavour Ltd. All rights reserved
+                </p>
             </div>
         </footer>
     </body>

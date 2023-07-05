@@ -1,4 +1,3 @@
-
 *, *:before, *:after {
     padding: 0;
     margin: 0;
@@ -26,6 +25,7 @@ nav {
     padding-right: 75px;
     height: 60px;
     z-index: 10;
+    box-shadow: 2px 0px 10px 1px grey;
 }
 nav > a img {
     width: 28%;
@@ -248,7 +248,7 @@ nav > a img {
     line-height: 1.2em;
     font-style: normal;
     font-size: 30px;
-    font-weight: 450;
+    font-weight: 350;
     font-family: Fira Sans;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -290,7 +290,7 @@ nav > a img {
     color: black;
     line-height: 1.2em;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 300;
     font-size: 30px;
     font-family: Fira Sans;
     margin-top: 0px;
@@ -431,7 +431,7 @@ nav > a img {
 #gen-button:hover {
     color: white;
     background-color: rgb(180, 19, 19);
-    border: 1px solid rgb(180, 19, 19) !important;
+    border: 2px solid rgb(180, 19, 19) !important;
     transition: all 0.3s ease-in-out !important;
 }
 #gen-button:active {
@@ -448,12 +448,16 @@ nav > a img {
 /*Who We Are*/
 .who-we-are {
     /*border: 1px solid black;*/
-    background-image: url(./img/IMG_5429.JPG);
+    background-image: url(./img/civil-engineering-tools-desktop-rrh6jj4xv7utkvdq.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-left: 105px;
     padding-right: 100px;
     padding-top: 35px;
     padding-bottom: 95px;
 }
+
 .who-we-are h2 {
     /*border: 1px solid white;*/
     color: black;
@@ -475,8 +479,8 @@ nav > a img {
     align-items: center;
     border-radius: 50%;
     background: white;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: 0px 15px 0px 15px;
 }
 .certifications img {
@@ -534,7 +538,7 @@ nav > a img {
     margin: 40px;
     /*background-color: pink;*/
 }
-.splide__slide.is-active .card{
+.splide__slide.is-active .card {
     transform: scale(1.09);
     transition: all 0.4s ease-in-out;
     border: 1px solid rgb(121, 113, 113);
@@ -574,16 +578,16 @@ nav > a img {
     display: block;
     height: 37px;
 }
-.what-clients-say .text-content p .top-colon, .bottom-colon {
-    font-size: 35px;
-    font-weight: 700;
-    color: rgb(202, 19, 19);
-}
 .what-clients-say .text-content p .bottom-colon {
     /*border: 1px solid black;*/
     width: 100%;
     display: block;
     text-align: right;
+}
+.what-clients-say .text-content p .top-colon, .bottom-colon {
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(202, 19, 19);
 }
 .what-clients-say .image-content {
     /*border: 1px solid black;*/
@@ -676,7 +680,7 @@ nav > a img {
     max-width: 100%;
 }
 .sub-rfq .rfq-form-div {
-   /* border: 1px solid white;*/
+    /* border: 1px solid white;*/
     width: 50%;
 }
 .rfq-form-div textarea {
@@ -762,18 +766,18 @@ nav > a img {
     padding-bottom: 75px;
 }
 #help-center .hc-form-div {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
 }
 .hc-form-div input {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid rgb(201, 189, 189);
     border-radius: 0px;
-    width: 47%;
+    width: 48.8%;
 }
 .hc-form-div input:nth-child(1) {
-    margin-right: 56px;
+    margin-right: 10px;
 }
 .hc-form-div input::placeholder {
     color: rgb(117, 114, 114);
@@ -785,11 +789,10 @@ nav > a img {
 }
 .hc-form-div textarea {
     padding: 10px;
-    margin-bottom: 15px;
-    margin-right: 56px;
+    margin-right: 10px;
     border: 1px solid rgb(201, 189, 189);
     border-radius: 0px;
-    width: 47%;
+    width: 48.8%;
 }
 .hc-form-div textarea::placeholder {
     color: rgb(117, 114, 114);
@@ -813,7 +816,6 @@ nav > a img {
     color: white;
     transition: all 0.3s ease-in-out !important;
     transition: transform .6s;
-    margin-bottom: 15px;
 }
 .hc-form-div button:hover {
     background-color: rgb(170, 11, 11);
@@ -831,17 +833,18 @@ footer {
     background: rgb(32, 32, 32);
     position: relative;
     width: 100%;
-    color: rgb(223, 210, 210);
+    color: white;
     padding: 40px 40px 2px 40px;
     display: block;
 }
 footer a {
     text-decoration: none;
-    color: rgb(223, 210, 210);
+    color: white;
 }
 footer a:hover {
-    color: rgb(74, 158, 228);
+    color: rgb(145, 140, 140)/*rgb(74, 158, 228)*/;
     text-decoration: underline;
+    transition: 0.2s all ease-in-out;
 }
 .upper-footer {
     display: flex;
@@ -849,6 +852,15 @@ footer a:hover {
 .upper-footer .left {
     width: 50%;
     display: block;
+}
+.upper-footer .left-hidden {
+    display: none;
+    width: 50%;
+    display: block;
+}
+.upper-footer .left-hidden p {
+    word-spacing: normal;
+    display: none;
 }
 .upper-footer .left p {
     padding-right: 37px;
@@ -891,9 +903,9 @@ footer a:hover {
 
 /*RESPONSIVE DESIGN*/
 /*Navigation Bar*/
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 800px) {
     .navbar-nav {
-        width: 200px !important;
+        width: 100% !important;
         padding: 15px 30px 20px 30px !important;
         background-color: white;
         border-radius: 0px 0px 1px 1px;
@@ -962,6 +974,11 @@ footer a:hover {
 
 
 /*Main Body Section*/
+@media screen and (max-width: 1203px) {
+    .what-clients-say {
+        display: none;
+    }
+}
 @media screen and (max-width: 800px) {
     .navbar-toggler {
         margin-right: 0px;
@@ -1072,18 +1089,19 @@ footer a:hover {
     }
     .sub-rfq .rfq-form-div {
         width: 100%;
+    }
+    .rfq-form-div form {
         text-align: center;
         /*border: 1px solid white;*/
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .rfq-form-div input {
         width: 80%;
     }
-    .rfq-form-div input[type=file] {
-        margin-right: 50px;
-        margin-left: 50px
+    .rfq-form-div input[type="file"] {
+        width: 80%;
     }
     .rfq-form-div textarea {
         width: 80%;
@@ -1097,6 +1115,9 @@ footer a:hover {
     }
     #help-center .hc-form-div {
         display: flex;
+    }
+    #help-center .hc-form-div form {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -1105,6 +1126,7 @@ footer a:hover {
     }
     .hc-form-div textarea {
         margin-right: 0px;
+        margin-bottom: 15px;
     }
     .hc-form-div input {
         width: 80%;
@@ -1113,6 +1135,21 @@ footer a:hover {
         width: 80%;
         margin-right: 32px;
         margin-left: 32px;
+    }
+    .upper-footer .left {
+        display: none;
+    }
+    .lower-footer .o-1 {
+        display: none;
+    }
+    .upper-footer .left-hidden {
+        display: unset;
+    }
+    .upper-footer .left-hidden p {
+        display: block;
+    }
+    .lower-footer p br {
+        display: none;
     }
 }
 @media screen and (max-width: 577px) {
@@ -1203,12 +1240,12 @@ footer a:hover {
 }*/
 
 /*Footer Section*/
-@media screen and (max-width: 513px) {
+/*@media screen and (max-width: 513px) {
     .upper-footer .left {
         display: block;
         line-height: 0.7em;
     }
-}
+}*/
 @media screen and (max-width: 343px) {
     .upper-footer .right-social-media {
         display: block;
