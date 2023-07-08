@@ -414,12 +414,12 @@ footer a:hover {
         display: none;
     }
  }
-@media screen and (max-width: 513px) {
+/*@media screen and (max-width: 513px) {
     .upper-footer .left {
         display: block;
         line-height: 0.7em;
     }
-}
+}*/
 @media screen and (max-width: 343px) {
     .upper-footer .right-social-media {
         display: block;
