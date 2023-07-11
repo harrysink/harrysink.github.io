@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *, *:before, *:after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     height: 100%;
     width: 100vw;
@@ -73,7 +79,10 @@ nav > a img {
 .navbar-nav li a:hover:after {
     width: 70%;
 }
-.form-inline {
+.navbar-nav a.active {
+    color: rgb(202, 19, 19);
+}
+/*.form-inline {
     color: #555;
     display: flex;
     padding: 2px 2px 2px 2px;
@@ -97,7 +106,7 @@ nav > a img {
 .form-inline input:focus::placeholder {
     color: rgb(161, 154, 154);
 }
-/*.nav-search button {
+.nav-search button {
     text-indent: -999px;
     overflow: hidden;
     width: 45px;
@@ -111,7 +120,7 @@ nav > a img {
 }
 .nav-search button:hover {
     opacity: 1;
-}*/
+}
 .form-inline input:focus {
     box-shadow: 0 0 5px  0 rgb(196, 189, 189);
     border-color: rgb(236, 227, 227);
@@ -236,11 +245,6 @@ footer a:hover {
         background-color: transparent;
     }
 }
-@media screen and (max-width: 570px) {
-    .form-inline input {
-        width: 200px;
-    }
-}
 
 /*Main Body Section*/
 @media screen and (max-width: 800px) {
@@ -283,15 +287,14 @@ footer a:hover {
 }
 
 /*Footer Section*/
-@media screen and (max-width: 513px) {
+/*@media screen and (max-width: 513px) {
     .upper-footer .left {
         display: block;
         line-height: 0.7em;
     }
-}
+}*/
 @media screen and (max-width: 343px) {
     .upper-footer .right-social-media {
         display: block;
     }
 }
- 
