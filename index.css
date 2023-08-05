@@ -1342,6 +1342,13 @@ footer a:hover {
     footer {
         padding: 40px 40px 2px 40px;
     }
+    #help-center {
+        padding-left: 40px;
+    }
+    .social-media {
+        display: flex;
+        flex-wrap: nowrap;
+    }
     #help-center .hidden-text {
         display: none;
     }
