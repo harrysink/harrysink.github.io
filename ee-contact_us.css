@@ -171,7 +171,7 @@ nav > a img {
 }
 .hero-container img {
     width: 100%;
-    filter: brightness(60%);
+    filter: brightness(50%);
     object-fit: cover;
 }
 
@@ -240,7 +240,7 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid rgb(201, 189, 189);
-    border-radius: 0px;
+    border-radius: 4px;
 }
 .rfq-div input[type=file] {
     background: white;
@@ -311,7 +311,7 @@ footer {
     position: relative;
     width: 100%;
     color: white;
-    padding: 40px 40px 2px 40px;
+    padding: 40px 100px 2px 100px;
     display: block;
 }
 footer a {
@@ -327,39 +327,89 @@ footer a:hover {
     display: flex;
 }
 .upper-footer .left {
-    width: 50%;
+    width: 55%;
     display: block;
 }
-.upper-footer .left-hidden {
-    display: none;
-    width: 50%;
-    display: block;
-}
-.upper-footer .left-hidden p {
-    word-spacing: normal;
-    display: none;
+.upper-footer .left .social-media a {
+    padding-right: 10px;
 }
 .upper-footer .left p {
-    padding-right: 37px;
+    word-spacing: normal;
 }
 .upper-footer .left .dot {
     font-size: 19px;
 }
-.upper-footer .right-social-media {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    float: right;
-}
-.upper-footer .right-social-media a {
-    padding-left: 11px;
-}
 /*.upper-footer .right a:hover {
     color: ;
 }*/
-.upper-footer p {
+.upper-footer .left p {
     font-weight: 600;
-    word-spacing: 10px;
+    font-size: 15px;
+}
+/*Help Center*/
+#help-center {
+    text-align: right;
+    padding-left: 10px;
+}
+#help-center p {
+    font-size: 15px;
+}
+.hc-form-div form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(201, 189, 189);
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+}
+.hc-form-div input::placeholder {
+    color: rgb(117, 114, 114);
+    opacity: 0.8;
+}
+.hc-form-div input:focus {
+    outline: none;
+    border: 3px solid grey;
+}
+.hc-form-div form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(201, 189, 189);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+}
+.hc-form-div textarea::placeholder {
+    color: rgb(117, 114, 114);
+    opacity: 0.8;
+}
+.hc-form-div textarea:focus {
+    outline: none;
+    border: 3px solid grey;
+}
+.hc-form-div a {
+    text-decoration: none;
+}
+.hc-form-div button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(199, 17, 17);
+    border: 1px solid rgb(199, 17, 17);
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease-in-out !important;
+    transition: transform .6s;
+}
+.hc-form-div button:hover {
+    background-color: rgb(170, 11, 11);
+    border-color: rgb(170, 11, 11);
+    transition: all 0.3s ease-in-out !important;
+}
+.hc-form-div button:active {
+    background-color: rgb(170, 11, 11);
+    border-color: rgb(170, 11, 11);
+    transform: scale(0.9);
 }
 .lower-footer p {
     /*border: 1px solid black;*/
@@ -368,6 +418,7 @@ footer a:hover {
     font-weight: 100;
 }
 .lower-footer p .o-1 {
+    display: none;
     font-weight: 600;
     word-spacing: 10px;
 }
@@ -391,6 +442,13 @@ footer a:hover {
     }
     .collapse {
         background-color: transparent;
+    }
+     /*.navbar-nav li a {
+        border: 1px solid black;
+        width: 100%;
+    }*/
+    .navbar-nav li a:hover:after {
+        width: 10%;
     }
 }
 @media screen and (max-width: 570px) {
@@ -480,19 +538,13 @@ footer a:hover {
     /*.drop-container {
         width: 100%;
     }*/
-    .upper-footer .left {
+    footer {
+        padding: 40px 40px 2px 40px;
+    }
+    #help-center .hidden-text {
         display: none;
     }
     .lower-footer .o-1 {
-        display: none;
-    }
-    .upper-footer .left-hidden {
-        display: unset;
-    }
-    .upper-footer .left-hidden p {
-        display: block;
-    }
-    .lower-footer p br {
         display: none;
     }
 }
@@ -513,9 +565,9 @@ footer a:hover {
         display: block;
         line-height: 0.7em;
     }
-}*/
+}
 @media screen and (max-width: 343px) {
     .upper-footer .right-social-media {
         display: block;
     }
-}
+}*/

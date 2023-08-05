@@ -15,13 +15,14 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <!--<script src="./scroll-trigger.js"></script>-->
         <script src="./assets/jquery-3.6.3.min.js"></script>
         <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
         <script src="./assets/splide-4.1.3/dist/js/splide.min.js"></script>
-        
+
         <!--NAVIGATION PANEL-->
         <nav class="navbar fixed-top navbar-expand-sm bg-white navbar-white">
-            <a class="navbar-brand" href="index.html"><img src="ee-logo.jpg" alt="ee logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="ee-logo.jpg" alt="ee-logo"></a>
             <button id="nav-tog-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
@@ -34,6 +35,25 @@
                     <li class="nav-item"><a class="nav-link" href="ee-contact_us.html">Contact Us</a></li>
                 </ul>
             </div>
+
+            <!--<script>
+                const menuBtn = document.getElementsByClassName(".navbar-toggler");
+                const navBarNav = document.getElementsByClassName(".navbar-nav");
+                let menuOpen = false;
+
+                menuBtn.addEventListener("click", () => {
+                    if (!menuOpen) {
+                        menuBtn.classList.add("open");
+                        navBarNav.style.maxWidth = navBarNav.scrollWidth + 'px';
+                        menuOpen = true;
+                    } else {
+                        menuBtn.classList.remove("open");
+                        navBarNav.style.maxWidth = null;
+                        menuOpen = false;
+                    }
+                })
+            </script>-->
+
             <!--<form class="form-inline" role="search" method="post">
                 <input id="search1" class="form-control mr-sm-2" type="search" placeholder="what can we help you find?">
                 <button id="search2" class="btn btn-success" type="submit"><i class="fas fa-search" style="color: rgb(202, 19, 19);"></i></button>
@@ -49,7 +69,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="8000">
-                    <img src="./img/banner-index.JPG" class="d-block w-100" alt="">
+                    <img src="./img/banner-index.JPG" class="d-block w-100" alt="oil-rig-night-time">
                     <div class="carousel-caption top-0 mt-5 pt-5 d-md-block">
                         <h1 class="display-1 mt-5">Our projects speak of our capability</h1>
                         <p class="fw-bolder mt-4">To stand out on a local and global scene, we prioritize quality and standard</p>
@@ -57,7 +77,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="8000">
-                    <img src="./img/jobs/Loadout operation.jpg" class="d-block w-100" alt="">
+                    <img src="./img/jobs/Loadout operation.jpg" class="d-block w-100" alt="container-loading-on-truck">
                     <div class="carousel-caption top-0 mt-5 pt-5 d-md-block">
                         <h1 class="display-1 mt-5">Our scope, Our services</h1>
                         <p class="fw-bolder mt-4">A wide range of services make us valuable in almost every project requirement</p>
@@ -65,7 +85,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="8000">
-                    <img src="./img/jobs/6.jpg" class="d-block w-100" alt="">
+                    <img src="./img/jobs/6.jpg" class="d-block w-100" alt="waste-skips-blue-and-yellow">
                     <div class="carousel-caption top-0 mt-5 pt-5 d-md-block">
                         <h1 class="display-1 mt-5">The forseeable future...</h1>
                         <p class="fw-bolder mt-4">Our projections for a future where we can operate with higher professional efficiency</p>
@@ -89,12 +109,14 @@
             <div id="image-and-text-1">
                 <div class="about-image-div">
                     <ul class="about-image">
-                        <li><img class="img-1" src="img\IMG_1007.JPG" alt=""></li>
-                        <li><img class="img-2" src="img\IMG_0988.JPG" alt="">
+                        <li><img class="img-1" src="img\IMG_1007.JPG" alt="oil-rig-day-time"></li>
+                        <li><img class="img-2" src="img\IMG_0988.JPG" alt="welder-welding">
+                            <!--hidden-atd div is displayed on mobile view only-->
                             <div class="hidden-atd"> <!--UI redesign change, remove property to revert-->
                                 <h3>About EE</h3>
                                 <div class="hr-div-1"><hr></div>
-                                <h1>Quality, Standard<br> and Control</h1>
+                                <img class="img-12" src="img\IMG_1007.JPG" alt="oil-rig-day-time">
+                                <h1>Quality, Standard and Control</h1>
                             </div>
                         </li>
                     </ul>
@@ -113,7 +135,7 @@
                         maintenance works and human needs in general.
                     </p>
                     <div class="button-div">
-                        <a href="ee-services.html" class="btn btn-secondary" style="border-color: rgb(202, 19, 19);">learn more<!--&raquo;--></a>
+                        <a href="ee-services.html" class="btn btn-secondary" style="border-color: rgb(202, 19, 19);">learn more &raquo</a>
                     </div>
                 </div>
             </div>
@@ -126,7 +148,7 @@
                     <a href="ee-services.html" style="text-decoration: none; color: hsl(240, 93%, 11%);">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 one">
-                            <img class="car-img-top" src="./img/IMG_0998.jpg" alt="" width="100%">
+                            <img class="car-img-top" src="./img/IMG_0998.jpg" alt="crane-lifting-container" width="100%">
                             <div class="card-body">
                                 <h4 class="card-title">Engineering</h4>
                                 <p class="card-text"></p>
@@ -139,7 +161,7 @@
                     <a href="ee-services.html" style="text-decoration: none; color: hsl(240, 93%, 11%);">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 two">
-                            <img class="car-img-top" src="./img/IMG_0992.JPG" alt="" width="100%">
+                            <img class="car-img-top" src="./img/IMG_0992.JPG" alt="fabricated-steel-frame-structure" width="100%">
                             <div class="card-body">
                                 <h4 class="card-title">Fabrication, Construction & Installation</h4>
                                 <p class="card-text"></p>
@@ -152,7 +174,7 @@
                     <a href="ee-services.html" style="text-decoration: none; color: hsl(240, 93%, 11%);">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 three">
-                            <img class="car-img-top" src="./img/IMG_5419.jpg" alt="" width="100%">
+                            <img class="car-img-top" src="./img/IMG_5419.jpg" alt="crane-installing-heavy-equipment" width="100%">
                             <div class="card-body">
                                 <h4 class="card-title">Procurement & Installation</h4>
                                 <p class="card-text"></p>
@@ -164,23 +186,40 @@
                     </div></a>
                 </div>
                 <div class="gen-button-div">
-                    <a href="ee-services.html" id="gen-button" class="btn btn-secondary" style="border-color: rgb(202, 19, 19);">learn more<!--&raquo;--></a>
+                    <a href="ee-services.html" id="gen-button" class="btn btn-secondary" style="border-color: rgb(202, 19, 19);">learn more &raquo;</a>
                 </div><br>
                 <!--<div class="gen-button-hr"><hr></div>-->
             </div>
 
             <!--Who We Are-->
             <div class="who-we-are">
-                <h2 class="display-4 text-left mt-5 mb-3" style="font-family: Fira sans; font-weight: 700; 
+                <div class="who-we-are-div">
+                    <h2 class="display-4 text-left mt-5 mb-3" style="font-family: Fira sans; font-weight: 700; 
                         font-size: 41px; font-style: normal; color: white; text-align: center;">Who We Are
-                </h2>
-                <p style="text-align: center;">We are a team of highly educated professionals with a wide enough <br>technical exposure in the
-                industry to find solutions <br>to the ever rising need of our clients</p>
-                <div class="cert-class">
-                    <!--<div class="certifications"></div>-->
-                    <div class="certifications"><img src="./img/IMG_2124.PNG" alt=""></div>
-                    <!--<div class="certifications"></div>-->
+                    </h2>
+                    <p style="text-align: center;">We are a team of highly educated professionals with a wide enough <br>technical exposure in the
+                    industry to find solutions <br>to the ever rising need of our clients</p>
+                    <div class="cert-class">
+                        <!--<div class="certifications"></div>-->
+                        <div class="certifications"><img src="./img/IMG_2124.PNG" alt="workman-holding-yellow-helmet-and-tools"></div>
+                        <!--<div class="certifications"></div>-->
+                    </div>
                 </div>
+                <!--fadeIn animation for who-we-are-->
+                <script>
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            const square1 = entry.target.querySelector('.who-we-are-div');
+                            if (entry.isIntersecting) {
+                                square1.classList.add('wwa-animation');
+                                return;
+                            }
+                            square1.classList.remove('wwa-animation');
+                        })
+                    });
+
+                    observer.observe(document.querySelector('.who-we-are'));
+                </script>
             </div>
 
             <!--What Our Clients Say-->
@@ -205,13 +244,12 @@
                                             </div>
                                             <div class="image-content">
                                                 <div class="card-image-stanbic">
-                                                    <img src="./img/sipml2.jpg" alt="" class="card-img-stanbic">
+                                                    <img src="./img/sipml2.jpg" alt="sipml-logo" class="card-img-stanbic">
                                                 </div>
                                                 <p class="card-image-desc">Thomas David <br> <b>Stanbic IBTC</b></b></p>
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     <div class="col-sm-4 splide__slide m-2">
                                         <div class="card">
                                             <div class="text-content">
@@ -223,7 +261,7 @@
                                             </div>
                                             <div class="image-content">
                                                 <div class="card-image-samarc">
-                                                    <img src="./img/samarc-oil.jpg" alt="" class="card-img-samarc">
+                                                    <img src="./img/samarc-oil.jpg" alt="samarc-oil-logo" class="card-img-samarc">
                                                 </div>
                                                 <p class="card-image-desc">Lily Hassan <br> <b>SAMARC Oil</b></b></p>
                                             </div>
@@ -241,7 +279,7 @@
                                             </div>
                                             <div class="image-content">
                                                 <div class="card-image-fabtek">
-                                                    <img src="./img/fabtekltd.png" alt="" class="card-img-fabtek">
+                                                    <img src="./img/fabtekltd.png" alt="fabtekltd-logo" class="card-img-fabtek">
                                                 </div>
                                                 <p class="card-image-desc">Blessing Eyo <br> <b>Fabtek LTD</b></b></p>
                                             </div>
@@ -258,7 +296,7 @@
                                             </div>
                                             <div class="image-content">
                                                 <div class="card-image-chevron">
-                                                    <img src="./img/chevron.jpg" alt="" class="card-img-chevron">
+                                                    <img src="./img/chevron.jpg" alt="chevron-logo" class="card-img-chevron">
                                                 </div>
                                                 <p class="card-image-desc">Olaoye Gbenga <br> <b>Chevron NG</b></b></p>
                                             </div>
@@ -289,18 +327,73 @@
                     splide.mount();
                 </script>
             </div>
-            
-            <!--Request For A Quote-->
-            <div class="request-for-quote">
-                <h2 class="display-4 text-left mt-5 mb-3" style="font-family: Fira sans; font-weight: 700; 
-                        font-size: 41px; font-style: normal; color: white; text-align: center;">Request For A Quote
+            <!--Our Projects-->
+            <div class="our-projects">
+                <h2 class="display-4 text-left mb-3" style="font-family: Fira sans; font-weight: 700; 
+                        font-size: 41px; font-style: normal; color: black; text-align: center;">Our Projects
                 </h2><br>
-                <div class="sub-rfq">
-                    <div class="rfq-image-div">
-                        <img src="./img/IMG_5430.JPG" alt="" width="480">
-                        <p style="color: white; font-family: Fira Sans Light;">There is no service charge for RFQ's</p>
+                <div class="op-div-1-wrapper">
+                    <div class="op-div-1">
+                        <div class="op-div-1-img-1"><img src="./img/projects gallery/Procurement of steel sheets and fabrication of 20 nos. offshore waste skips/4.jpg" alt="unpainted-waste-skips"></div>
+                        <div class="op-div-1-img-2"><img src="./img/projects gallery/Procurement of steel sheets and fabrication of 20 nos. offshore waste skips/6.jpg" alt="painted-waste-skips-yellow-and-blue"></div>
+                        <h4>Offshore waste disposal skips</h4>
                     </div>
+                </div>
+                <!--slideIn-1 animation for op-div-1-->
+                <script>
+                    const observer1 = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            const square2 = entry.target.querySelector('.op-div-1');
+                            if (entry.isIntersecting) {
+                                square2.classList.add('op-div-1-animation');
+                                return;
+                            }
+                            square2.classList.remove('op-div-1-animation');
+                        })
+                    });
+                    observer1.observe(document.querySelector('.op-div-1-wrapper'));
+                </script>
+
+                <div class="op-div-2-wrapper">
+                    <div class="op-div-2">
+                        <h4 class="seen">Shipping containers procurement</h4>
+                        <div class="op-div-2-img-1"><img src="./img/projects gallery/Procurement & fabrication of 8 x 6 shipping containers for Agbami turn/Loadout of 8x8 container for turn around Maintenance.jpg" alt="container-loading-on-truck"></div>
+                        <div class="op-div-2-img-2"><img src="./img/projects gallery/Procurement & fabrication of 8 x 6 shipping containers for Agbami turn/Loadout operation.jpg" alt="container-loading-on-truck"></div>
+                        <!--second h4 tag is displayed on mobile view only-->
+                        <h4 class="unseen">Shipping containers procurement</h4>
+                    </div>
+                </div>
+                <!--slideIn-2 animation for op-div-2-->
+                <script>
+                    const observer2 = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            const square3 = entry.target.querySelector('.op-div-2');
+                            if (entry.isIntersecting) {
+                                square3.classList.add('op-div-2-animation');
+                                return;
+                            }
+                            square3.classList.remove('op-div-2-animation');
+                        })
+                    });
+                    observer2.observe(document.querySelector('.op-div-2-wrapper'));
+                </script>
+                <div class="gen-button-div">
+                    <a href="ee-projects.html" id="gen-button" class="btn btn-secondary" style="border-color: rgb(202, 19, 19);">learn more &raquo;</a>
+                </div><br>
+            </div>
+
+            <!--Request For A Quote-->
+            <div class="request-for-quote-dv">
+                <h2 class="display-4 text-left mt-5 mb-2" style="font-family: Fira sans; font-weight: 700;
+                        font-size: 41px; font-style: normal; color: black; text-align: center;">Request For A Quote
+                </h2><br>
+                <!--rfq-image-div-1 is displayed on mobile view only-->
+                <div class="rfq-image-div-1">
+                    <img src="./img/IMG_5430.JPG" alt="yellow-helmet-and-workers-shaking-hands" width="480">
+                </div>
+                <div class="sub-rfq">
                     <div class="rfq-form-div">
+                        <p style="color: white; font-family: Fira Sans Light;">There is no service charge for RFQ's</p>
                         <form action="mailto:eagleendeavour@yahoo.com" method="post">
                             <input type="text" placeholder="Name">
                             <input type="email" placeholder="Email">
@@ -309,49 +402,60 @@
                             <button type="submit">SEND</button>
                         </form>
                     </div>
+                    <div class="rfq-image-div-2">
+                        <img src="./img/IMG_5430.JPG" alt="yellow-helmet-and-workers-shaking-hands" width="480">
+                    </div>
                 </div>
             </div>
-
-            <!--Help Center-->
-            <div id="help-center">
-                <h2 class="display-4 text-left mt-5 mb-3" style="font-family: Fira sans; font-weight: 700; 
-                        font-size: 31px; font-style: normal; color: black; text-align: left;">Do You Have Any Questions? 
-                        Feel Free To Contact Us!
-                </h2><br>
-                <div class="hc-form-div">
-                    <form action="mailto:eagleendeavour@yahoo.com" method="post">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <textarea name="question" id="question" cols="30" rows="5" placeholder="Question?"></textarea>
-                        <button type="submit">SEND</button>
-                    </form>
-                </div>
-            </div>   
+            <!--Old Mobile view rfq-->
+            <!--<h2 class="rfq-h2 display-4 text-left mt-5 mb-3" style="font-family: Fira sans; font-weight: 700; 
+                        font-size: 41px; font-style: normal; color: black; text-align: center;">Request For A Quote
+            </h2><br>
+            <div class="rfq-image-div-mv">
+                <img src="./img/IMG_5430.JPG" alt="" width="480">
+            </div>
+            <div class="rfq-form-div-mv">
+                <p style="color: white; font-family: Fira Sans Light; text-align: center;">There is no service charge for RFQ's</p>
+                <form action="mailto:eagleendeavour@yahoo.com" method="post">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                    <input type="file">
+                    <button type="submit">SEND</button>
+                </form>
+            </div>-->
         </main>
 
         <!--FOOTER SECTION-->
         <footer class="footer">
             <div class="upper-footer">
                 <div class="left">
-                    <p><a href="ee-about.html">About</a></p> 
-                    <!--<p><a href="">Clients</a></p>--> 
-                    <p><a href="ee-contact_us.html">Contact</a></p>
-                </div>
-                <div class="left-hidden">
-                    <p><a href="ee-about.html">About</a></p> 
-                    <!--<p><a href="">Clients</a></p>--> 
-                    <p><a href="ee-contact_us.html">Contact</a></p>
+                    <!--<p><a href="ee-about.html">About</a></p> 
+                    <p><a href="">Clients</a></p>
+                    <p><a href="ee-contact_us.html">Contact</a></p>-->
                     <p><a href="terms-of -use.html">Terms of use</a></p> 
                     <p><a href="privacy.html">Privacy</a></p> 
                     <p><a href="index.html#help-center">Help center</a></p> 
+                    <div class="social-media">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <!--<a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>-->
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto: eagleendeavour@yahoo.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="right-social-media">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto: eagleendeavour@yahoo.com"><i class="fa-solid fa-envelope"></i></a>
+                <div class="right">
+                    <div id="help-center">
+                        <p><span class="hidden-text">Do You Have Any Questions? </span>Feel Free To Contact Us!</p>
+                        <div class="hc-form-div">
+                            <form action="mailto:eagleendeavour@yahoo.com" method="post">
+                                <input type="email" placeholder="Email">
+                                <textarea name="question" id="question" cols="30" rows="2" placeholder="Question?"></textarea>
+                                <button type="submit">SEND</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -359,7 +463,7 @@
                 <p>
                     <span class="o-1">
                         <span class="o-2"><a href="terms-of -use.html">Terms of use</a></span> · <a href="privacy.html">Privacy</a> · <span class="o-3"><a href="index.html#help-center">Help centre</a></span>
-                    </span> <br>© Copyright 2009 - 2023 Eagle Endeavour Ltd. All rights reserved
+                    </span>© Copyright 2009 - 2023 Eagle Endeavour Ltd. All rights reserved
                 </p>
             </div>
         </footer>
