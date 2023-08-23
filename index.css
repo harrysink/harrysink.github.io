@@ -107,8 +107,8 @@ body {
     font-size: small;
     color: rgb(119, 118, 118);
 }
-.navbar-toggler-icon {
-    color: black;
+.navbar-toggler-icon i {
+    color: black !important;
 }
 /*MAIN BODY*/
 /*Hero*/
