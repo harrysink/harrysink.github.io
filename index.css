@@ -110,6 +110,7 @@ body {
 .navbar-toggler-icon i {
     color: black !important;
 }
+
 /*MAIN BODY*/
 /*Hero*/
 .hero {
@@ -325,19 +326,19 @@ body {
     padding-right: 30px;
     line-height: 30px;
 }
-.project-maggallo {
+.project-mangallo {
     display: flex;
 }
-.project-maggallo .img-div {
+.project-mangallo .img-div {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.project-maggallo .img-div img {
+.project-mangallo .img-div img {
     width: 400px;
 }
-.project-maggallo .img-desc {
+.project-mangallo .img-desc {
     width: 50%;
     padding-left: 20px;
     padding-right: 30px;
@@ -467,10 +468,10 @@ body {
     .viewlink-btn {
         margin-bottom: 0px;
     }
-    .project-ee, .project-steakholder, .project-maggallo {
+    .project-ee, .project-steakholder, .project-mangallo {
         display: block;
     }
-    .project-ee .img-div, .project-steakholder .img-div, .project-maggallo .img-div {
+    .project-ee .img-div, .project-steakholder .img-div, .project-mangallo .img-div {
         width: 100%;
         padding-bottom: 30px;
     }
@@ -481,10 +482,10 @@ body {
         width: 190px;
         border-radius: 5px;
     }
-    .project-maggallo .img-div img {
+    .project-mangallo .img-div img {
         width: 310px;
     }
-    .project-ee .img-desc, .project-steakholder .img-desc, .project-maggallo .img-desc {
+    .project-ee .img-desc, .project-steakholder .img-desc, .project-mangallo .img-desc {
         width: 100%;
         margin-bottom: 35px;
         padding-left: 40px;
@@ -552,7 +553,7 @@ body {
     #projects {
         margin: 0px 20px 0px 20px;
     }
-    .project-ee .img-desc, .project-steakholder .img-desc, .project-maggallo .img-desc {
+    .project-ee .img-desc, .project-steakholder .img-desc, .project-mangallo .img-desc {
         padding: 0px;
     }
     #contact {
