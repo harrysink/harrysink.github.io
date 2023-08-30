@@ -344,6 +344,9 @@ body {
     padding-right: 30px;
     line-height: 30px;
 }
+/*.img-desc p strong {
+    color: blueviolet;
+}*/
 
 /*Contact*/
 #contact {
