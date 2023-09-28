@@ -326,6 +326,27 @@ body {
     padding-right: 30px;
     line-height: 30px;
 }
+.project-moviebox {
+    display: flex;
+}
+.project-moviebox .img-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-moviebox .img-div img {
+    width: 250px;
+    background-color: black;
+    padding: 13px;
+    border-radius: 10px;
+}
+.project-moviebox .img-desc {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 30px;
+    line-height: 30px;
+}
 .project-mangallo {
     display: flex;
 }
@@ -471,10 +492,10 @@ body {
     .viewlink-btn {
         margin-bottom: 0px;
     }
-    .project-ee, .project-steakholder, .project-mangallo {
+    .project-ee, .project-steakholder, .project-moviebox,.project-mangallo {
         display: block;
     }
-    .project-ee .img-div, .project-steakholder .img-div, .project-mangallo .img-div {
+    .project-ee .img-div, .project-steakholder .img-div, .project-moviebox .img-div, .project-mangallo .img-div {
         width: 100%;
         padding-bottom: 30px;
     }
@@ -485,10 +506,13 @@ body {
         width: 190px;
         border-radius: 5px;
     }
+    .project-moviebox .img-div img {
+        width: 185px;
+    }
     .project-mangallo .img-div img {
         width: 310px;
     }
-    .project-ee .img-desc, .project-steakholder .img-desc, .project-mangallo .img-desc {
+    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc {
         width: 100%;
         margin-bottom: 35px;
         padding-left: 40px;
@@ -556,7 +580,7 @@ body {
     #projects {
         margin: 0px 20px 0px 20px;
     }
-    .project-ee .img-desc, .project-steakholder .img-desc, .project-mangallo .img-desc {
+    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc {
         padding: 0px;
     }
     #contact {
