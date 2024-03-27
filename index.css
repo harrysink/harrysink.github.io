@@ -2,7 +2,11 @@
     font-family: Source Sans Pro;
     src: url(./assets/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
 }
-
+@font-face {
+    font-family: Freestyle Script;
+    src: url(./assets/freestyle-script/FREESCPT.TTF);
+}
+@import url('https://fonts.cdnfonts.com/css/freestyle-script');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
@@ -347,6 +351,26 @@ body {
     padding-right: 30px;
     line-height: 30px;
 }
+.project-fine-girl {
+    display: flex;
+}
+.project-fine-girl .img-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-fine-girl .img-div img {
+    width: 245px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+.project-fine-girl .img-desc {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 30px;
+    line-height: 30px;
+}
 .project-mangallo {
     display: flex;
 }
@@ -492,10 +516,10 @@ body {
     .viewlink-btn {
         margin-bottom: 0px;
     }
-    .project-ee, .project-steakholder, .project-moviebox,.project-mangallo {
+    .project-ee, .project-steakholder, .project-moviebox,.project-mangallo, .project-fine-girl {
         display: block;
     }
-    .project-ee .img-div, .project-steakholder .img-div, .project-moviebox .img-div, .project-mangallo .img-div {
+    .project-ee .img-div, .project-steakholder .img-div, .project-moviebox .img-div, .project-mangallo .img-div, .project-fine-girl .img-div {
         width: 100%;
         padding-bottom: 30px;
     }
@@ -509,10 +533,13 @@ body {
     .project-moviebox .img-div img {
         width: 185px;
     }
+    .project-fine-girl .img-div img {
+        width: 180px;
+    }
     .project-mangallo .img-div img {
         width: 310px;
     }
-    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc {
+    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc, .project-fine-girl .img-desc {
         width: 100%;
         margin-bottom: 35px;
         padding-left: 40px;
@@ -580,7 +607,7 @@ body {
     #projects {
         margin: 0px 20px 0px 20px;
     }
-    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc {
+    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc, .project-fine-girl .img-desc {
         padding: 0px;
     }
     #contact {
