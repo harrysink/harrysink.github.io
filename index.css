@@ -390,6 +390,25 @@ body {
     padding-right: 30px;
     line-height: 30px;
 }
+.project-coinlore {
+    display: flex;
+}
+.project-coinlore .img-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-coinlore .img-div img {
+    width: 245px;
+    border-radius: 10px;
+}
+.project-coinlore .img-desc {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 30px;
+    line-height: 30px;
+}
 /* .project-mangallo {
     display: flex;
 }
@@ -535,10 +554,10 @@ body {
     .viewlink-btn {
         margin-bottom: 0px;
     }
-    .project-ee, .project-steakholder, .project-moviebox, .project-mangallo, .project-fine-girl, .project-noughts-crosses {
+    .project-ee, .project-steakholder, .project-moviebox, .project-mangallo, .project-fine-girl, .project-noughts-crosses, .project-coinlore {
         display: block;
     }
-    .project-ee .img-div, .project-steakholder .img-div, .project-moviebox .img-div, .project-mangallo .img-div, .project-fine-girl .img-div, .project-noughts-crosses .img-div {
+    .project-ee .img-div, .project-steakholder .img-div, .project-moviebox .img-div, .project-mangallo .img-div, .project-fine-girl .img-div, .project-noughts-crosses .img-div, .project-coinlore .img-div {
         width: 100%;
         padding-bottom: 30px;
     }
@@ -558,10 +577,13 @@ body {
     .project-noughts-crosses .img-div img {
         width: 180px;
     }
+    .project-coinlore .img-div img {
+        width: 180px;
+    }
     /* .project-mangallo .img-div img {
         width: 310px;
     } */
-    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc, .project-fine-girl .img-desc, .project-noughts-crosses .img-desc {
+    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc, .project-fine-girl .img-desc, .project-noughts-crosses .img-desc, .project-coinlore .img-desc {
         width: 100%;
         margin-bottom: 35px;
         padding-left: 40px;
@@ -629,7 +651,7 @@ body {
     #projects {
         margin: 0px 20px 0px 20px;
     }
-    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc, .project-fine-girl .img-desc, .project-noughts-crosses .img-desc {
+    .project-ee .img-desc, .project-steakholder .img-desc, .project-moviebox .img-desc, .project-mangallo .img-desc, .project-fine-girl .img-desc, .project-noughts-crosses .img-desc, .project-coinlore .img-desc {
         padding: 0px;
     }
     #contact {
