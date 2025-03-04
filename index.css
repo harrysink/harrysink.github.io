@@ -61,6 +61,12 @@ body {
 .navbar .collapse {
     justify-content: right;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 /*.navbar-nav {
     text-align: right;
 }*/
